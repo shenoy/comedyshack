@@ -195,6 +195,7 @@ input[type="submit"]:hover {
   align-items: center;
   margin: auto;
   border: #fff;
+  border-radius: 5px;
 }
 p {
   text-align: center;
@@ -204,6 +205,7 @@ p {
   display: none;
   height: 100px;
   background-color: rgb(237, 247, 193);
+  border-radius: 5px;
   color: blue;
   align-items: center;
   border-color: white;
