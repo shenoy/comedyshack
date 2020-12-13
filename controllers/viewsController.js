@@ -77,12 +77,18 @@ exports.getSubmitForm = (req, res) => {
   });
 };
 
-exports.updateUserData = catchAsync(async (req, res, next) => {
+exports.getAboutPage = (req, res) => {
+  res.status(200).render("about", {
+    title: "About comedy shack",
+  });
+};
+
+exports.updateJokeData = catchAsync(async (req, res, next) => {
   const updatedUser = await User.findByIdAndUpdate(
-    req.user.id,
+    req.joke.id,
     {
-      name: req.body.name,
-      email: req.body.email,
+      setup: req.body.setup,
+      punchline: req.body.punchline,
     },
     {
       new: true,
@@ -90,8 +96,8 @@ exports.updateUserData = catchAsync(async (req, res, next) => {
     }
   );
 
-  res.status(200).render("account", {
-    title: "Your account",
-    user: updatedUser,
+  res.status(200).render("update", {
+    title: "update",
+    user: updatedJoke,
   });
 });

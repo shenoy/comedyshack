@@ -8,6 +8,7 @@ router.get("/random", viewsController.getRandomJoke);
 router.get("/programming", viewsController.getProgrammingJoke);
 router.get("/general", viewsController.getGeneralJoke);
 router.get("/knockknock", viewsController.getKnockKnockJoke);
+router.get("/about", viewsController.getAboutPage);
 
 router.get("/submit", viewsController.getSubmitForm);
 
