@@ -5,4 +5,6 @@ block content
     each joke in jokes
       #box
         p= joke.setup
-        p= joke.punchline
+        .clicker(tabindex='1') Click 
+        .hiddendiv
+          p= joke.punchline 

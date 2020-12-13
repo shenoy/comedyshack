@@ -1,6 +1,6 @@
 body {
   min-height: 100vh;
-  background: rgb(2, 0, 36);
+  background: white;
   background: linear-gradient(
     90deg,
     rgba(2, 0, 36, 1) 0%,
@@ -66,7 +66,7 @@ a.next:hover {
   border-radius: 5px;
   font-weight: 300;
   background-color: rgb(12, 31, 139);
-  box-shadow: 10px 10px 5px grey;
+  box-shadow: 10px 10px 5px black;
   text-decoration: none;
 }
 
@@ -92,7 +92,7 @@ nav.nav {
   font-family: "Lato", sans-serif;
   font-size: 1.5rem;
   max-width: 700px;
-  height: 150px;
+  height: 200px;
   padding: 30px;
   border: 1px solid rgb(154, 154, 161);
   border-radius: 15px;
@@ -183,6 +183,40 @@ input[type="submit"]:hover {
 }
 .alert--error {
   background-image: linear-gradient(to right, red, pink);
+}
+
+.clicker {
+  width: 100px;
+  height: 30px;
+  background-color: rgb(237, 224, 241);
+  cursor: default;
+  font-size: 1.5rem;
+  text-align: center;
+  align-items: center;
+  margin: auto;
+  border: #fff;
+}
+
+.hiddendiv {
+  display: none;
+  height: 50px;
+  background-color: rgb(237, 247, 193);
+  color: blue;
+  align-items: center;
+  border-color: white;
+}
+
+.clicker:focus + .hiddendiv {
+  display: block;
+  border-color: white;
+  align-items: center;
+}
+
+.clicker:focus {
+  color: white;
+  font-size: 0rem;
+  width: 200px;
+  height: 0px;
 }
 
 @media screen and (max-width: 750px) {

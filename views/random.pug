@@ -3,6 +3,7 @@ extends base
 block content
   #box
     p= joke.setup
-    p= joke.punchline
-        
+    .clicker(tabindex='1') Click
+    .hiddendiv
+      p= joke.punchline        
   a.next(href='/random') Next Joke
