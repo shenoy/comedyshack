@@ -1,0 +1,9 @@
+extends base
+
+block content
+
+    each joke in jokes
+      #box
+        p= joke.setup
+        p= joke.punchline
+        
