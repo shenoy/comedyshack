@@ -176,7 +176,7 @@ input[type="submit"]:hover {
   background-image: linear-gradient(to right, red, pink);
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 750px) {
   header {
     box-shadow: 10px 10px 5px black;
     margin-bottom: 30px;
