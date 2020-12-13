@@ -1,27 +1,20 @@
 body {
   min-height: 100vh;
-  background: white;
-  background: linear-gradient(
-    90deg,
-    rgba(2, 0, 36, 1) 0%,
-    rgba(34, 92, 85, 1) 0%,
-    rgba(121, 9, 104, 1) 50%,
-    rgba(65, 152, 173, 1) 97%,
-    rgba(26, 173, 203, 1) 100%
-  );
+  background: url(/img/body2.jpg) no-repeat center center fixed;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
 }
 
 h1 {
   text-align: center;
   font-family: "Lato", sans-serif;
-  color: pink;
+  color: brown;
 }
 
 img {
   height: 150px;
   border-radius: 5px;
-  margin-left: 45%;
-  margin-right: 45%;
 }
 
 a {
@@ -51,14 +44,12 @@ a.next {
   color: rgb(250, 248, 108);
   margin-top: 50px;
   text-align: center;
-  margin-left: 47%;
   border: 1px solid rgb(154, 154, 161);
-  border-radius: 5px;
+  border-radius: 30px;
   background-color: cornflowerblue;
   box-shadow: 10px 10px 5px black;
   text-decoration: none;
-  padding-top: 5px;
-  padding-bottom: 5px;
+  padding: 20px 100px 20px 100px;
 }
 
 a.next:hover {
@@ -66,23 +57,27 @@ a.next:hover {
   margin-top: 50px;
   text-align: center;
   border: 3px solid green;
-  padding-top: 5px;
-  padding-bottom: 5px;
   border: 1px solid rgb(154, 154, 161);
-  border-radius: 5px;
+  border-radius: 30px;
   font-weight: 300;
   background-color: rgb(12, 31, 139);
   box-shadow: 10px 10px 5px black;
   text-decoration: none;
+  padding: 20px 100px 20px 100px;
 }
 
 header {
   box-shadow: 10px 10px 5px black;
   margin-bottom: 30px;
   height: 150px;
+  left: 0;
+  bottom: 0;
   color: white;
   background: url(/img/header2.jpeg);
   width: 100%;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
 }
 
 nav.nav {
@@ -91,20 +86,28 @@ nav.nav {
   padding-bottom: 10px;
   width: 100%;
 }
+.container {
+  width: auto;
+  align-items: center;
+  margin: auto;
+  width: 80%;
+  text-align: center;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+}
 
 #box {
   box-sizing: content-box;
   box-shadow: 10px 10px 5px black;
   font-family: "Lato", sans-serif;
   font-size: 1.5rem;
-  max-width: 700px;
+  width: 40%;
   height: 200px;
   padding: 30px;
   border: 1px solid rgb(154, 154, 161);
   border-radius: 15px;
   margin-bottom: 15px;
-  margin-left: 30%;
-  margin-right: 30%;
   color: black;
   background-color: white;
   text-align: center;
@@ -137,7 +140,8 @@ form {
   width: 50%;
   margin-left: 25%;
   font-family: "Lato", sans-serif;
-  color: pink;
+  color: brown;
+  font-size: 2rem;
 }
 input[type="text"],
 select {
@@ -158,6 +162,7 @@ input[type="submit"] {
   margin: 8px 0;
   border: none;
   border-radius: 4px;
+  font-size: 1.5rem;
   cursor: pointer;
   box-shadow: 0 2rem 4rem rgba(0, 0, 0, 0.25);
 }
@@ -244,66 +249,6 @@ p {
   .hiddendiv {
     height: 50px;
   }
-
-  #box {
-    box-sizing: content-box;
-    box-shadow: 10px 10px 5px black;
-    font-family: "Lato", sans-serif;
-    font-size: 1rem;
-    min-width: 300px;
-    height: 150px;
-    padding: 30px;
-    border: 1px solid rgb(154, 154, 161);
-    border-radius: 15px;
-    margin-bottom: 15px;
-    margin-left: 20%;
-    margin-right: 20%;
-    color: black;
-    background-color: white;
-  }
-
-  body {
-    min-height: 100vh;
-    background: rgb(34, 193, 195);
-    background: linear-gradient(
-      0deg,
-      rgba(34, 193, 195, 1) 0%,
-      rgba(253, 187, 45, 1) 100%
-    );
-  }
-
-  header {
-    box-shadow: 10px 10px 5px black;
-    margin-bottom: 30px;
-    height: 150px;
-    color: white;
-    background: url(/img/bg.jpg);
-    min-width: 600px;
-    left: 0;
-    bottom: 0;
-  }
-
-  nav.nav {
-    background-color: white;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    width: 100%;
-  }
-
-  a {
-    color: rgb(92, 38, 83);
-    font-family: "Lato", sans-serif;
-    font-size: 1rem;
-    padding: 0px 10px;
-    text-decoration: none;
-  }
-
-  img {
-    height: 150px;
-    border-radius: 5px;
-    margin-left: 45%;
-    margin-right: 45%;
-  }
 }
 
 @media screen and (min-width: 900px) {
@@ -345,7 +290,6 @@ p {
   border: 1px solid rgb(154, 154, 161);
   border-radius: 15px;
   margin-bottom: 15px;
-  margin-left: 30%;
   color: black;
   background-color: white;
   color: black;

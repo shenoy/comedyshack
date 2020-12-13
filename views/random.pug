@@ -1,10 +1,10 @@
 extends base
 
 block content
-   
-  #box
-    p= joke.setup
-    .clicker(tabindex='1') Click
-    .hiddendiv
-      p= joke.punchline        
-  a.next(href='/random') Next Joke
+  .container   
+    #box
+      p= joke.setup
+      .clicker(tabindex='1') Click
+      .hiddendiv
+        p= joke.punchline        
+    a.next(href='/') Next Joke
