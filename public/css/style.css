@@ -196,10 +196,13 @@ input[type="submit"]:hover {
   margin: auto;
   border: #fff;
 }
+p {
+  text-align: center;
+}
 
 .hiddendiv {
   display: none;
-  height: 50px;
+  height: 100px;
   background-color: rgb(237, 247, 193);
   color: blue;
   align-items: center;
