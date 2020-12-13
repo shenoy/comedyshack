@@ -1,7 +1,7 @@
 extends base
 
 block content
-
+    h1=`Total ${jokes.length} jokes` 
     each joke in jokes
       #box
         p= joke.setup
