@@ -1,6 +1,14 @@
 body {
   min-height: 100vh;
-  background-image: linear-gradient(to right, black, pink, black);
+  background: rgb(2, 0, 36);
+  background: linear-gradient(
+    90deg,
+    rgba(2, 0, 36, 1) 0%,
+    rgba(34, 92, 85, 1) 0%,
+    rgba(121, 9, 104, 1) 50%,
+    rgba(65, 152, 173, 1) 97%,
+    rgba(26, 173, 203, 1) 100%
+  );
 }
 
 img {
@@ -36,12 +44,12 @@ ul.footer {
 a.next {
   color: rgb(250, 248, 108);
   margin-top: 50px;
+  text-align: center;
   margin-left: 47%;
-  margin-right: 47%;
   border: 1px solid rgb(154, 154, 161);
   border-radius: 5px;
   background-color: cornflowerblue;
-  box-shadow: 10px 10px 5px grey;
+  box-shadow: 10px 10px 5px black;
   text-decoration: none;
   padding-top: 5px;
   padding-bottom: 5px;
@@ -50,8 +58,8 @@ a.next {
 a.next:hover {
   color: rgb(250, 248, 108);
   margin-top: 50px;
-  margin-left: 47%;
-  margin-right: 47%;
+  text-align: center;
+  border: 3px solid green;
   padding-top: 5px;
   padding-bottom: 5px;
   border: 1px solid rgb(154, 154, 161);
@@ -93,6 +101,7 @@ nav.nav {
   margin-right: 30%;
   color: black;
   background-color: white;
+  text-align: center;
 }
 
 .footer {
@@ -205,9 +214,12 @@ input[type="submit"]:hover {
 
   body {
     min-height: 100vh;
-
-    background-image: linear-gradient(to right, white, white, white);
-    background: radial-gradient(#e66465, #9198e5);
+    background: rgb(34, 193, 195);
+    background: linear-gradient(
+      0deg,
+      rgba(34, 193, 195, 1) 0%,
+      rgba(253, 187, 45, 1) 100%
+    );
   }
 
   header {
@@ -217,10 +229,8 @@ input[type="submit"]:hover {
     color: white;
     background: url(/img/bg.jpg);
     min-width: 600px;
-    background-size: 1100px 200px !important;
     left: 0;
     bottom: 0;
-    width: 100%;
   }
 
   nav.nav {
@@ -243,5 +253,18 @@ input[type="submit"]:hover {
     border-radius: 5px;
     margin-left: 45%;
     margin-right: 45%;
+  }
+}
+
+@media screen and (min-width: 800px) {
+  #box {
+    font-size: 1.5rem;
+  }
+}
+
+@media screen and (max-width: 780px) {
+  #box {
+    font-size: 1rem;
+    height: 120px;
   }
 }
