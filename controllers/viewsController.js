@@ -2,12 +2,12 @@ const Joke = require("../models/jokesModel");
 const catchAsync = require("../utils/catchAsync");
 const AppError = require("../utils/appError");
 
-exports.getOverview = catchAsync(async (req, res, next) => {
+exports.getAllJokes = catchAsync(async (req, res, next) => {
   // 1) Get jokes from collection
   const jokes = await Joke.find();
   // 2) Build template
   res.status(200).render("overview", {
-    title: "All Jokes",
+    title: "All jokes",
     jokes,
   });
 });
