@@ -230,31 +230,6 @@ input[type="submit"]:hover {
     width: 100%;
   }
 
-  a.next {
-    color: rgb(250, 248, 108);
-    margin-top: 50px;
-    border: 1px solid rgb(154, 154, 161);
-    border-radius: 5px;
-    background-color: cornflowerblue;
-    box-shadow: 10px 10px 5px grey;
-    text-decoration: none;
-    padding-top: 5px;
-    padding-bottom: 5px;
-  }
-
-  a.next:hover {
-    color: rgb(250, 248, 108);
-    margin-top: 50px;
-    padding-top: 5px;
-    padding-bottom: 5px;
-    border: 1px solid rgb(154, 154, 161);
-    border-radius: 5px;
-    font-weight: 300;
-    background-color: rgb(12, 31, 139);
-    box-shadow: 10px 10px 5px grey;
-    text-decoration: none;
-  }
-
   a {
     color: rgb(92, 38, 83);
     font-family: "Lato", sans-serif;
