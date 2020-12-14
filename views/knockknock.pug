@@ -4,7 +4,7 @@ block content
   .container
     h1=`Total ${jokes.length} jokes` 
     each joke in jokes
-      #box
+      #box(data-aos="fade-left" data-aos-delay="300")
         p= joke.setup
         .clicker(tabindex='1') Click 
         .hiddendiv
