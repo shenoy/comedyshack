@@ -33,7 +33,7 @@ const jokesSchema = new mongoose.Schema({
       1000,
       "A joke punchline must have less than or equal to 1000 characters",
     ],
-    minlength: [1, "A joke name must have more or equal then 1 characters"],
+    minlength: [1, "A joke name must have atleast one character"],
   },
 });
 

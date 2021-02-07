@@ -7,6 +7,7 @@ const AppError = require("./utils/appError");
 const globalErrorHandler = require("./controllers/errorController");
 const jokesRouter = require("./routes/jokesRoutes");
 const viewRouter = require("./routes/viewRoutes");
+const commentsRouter = require("./routes/commentsRoutes");
 dotenv.config({ path: "./config.env" });
 const app = express();
 app.set("view engine", "pug");
@@ -51,6 +52,7 @@ app.use((req, res, next) => {
 // 3) ROUTES
 app.use("/", viewRouter);
 app.use("/api/v1/jokes", jokesRouter);
+app.use("/api/v1/comments", commentsRouter);
 app.all("*", (req, res, next) => {
   next(new AppError(`Can't find ${req.originalUrl} on this server!`, 404));
 });
